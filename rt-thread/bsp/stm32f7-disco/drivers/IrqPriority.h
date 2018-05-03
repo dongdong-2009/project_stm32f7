@@ -1,0 +1,61 @@
+#ifndef IRQPRIORITY_H
+#define IRQPRIORITY_H
+
+#define NVIC_PRIORITYGROUP NVIC_PRIORITYGROUP_4
+
+#define SYSTICK_IRQ_PREEMPT (0xF)
+#define SYSTICK_IRQ_SUB (0)
+
+#define ADC_IRQ_PREEMPT (1)
+#define ADC_IRQ_SUB (0)
+
+#define CAN1_TX_IRQ_PREEMPT (0xF)
+#define CAN1_TX_TRQ_SUB (0)
+
+#define CAN1_RX0_IRQ_PREEMPT (0xF)
+#define CAN1_RX0_TRQ_SUB (0)
+
+#define CAN1_RX1_IRQ_PREEMPT (0xF)
+#define CAN1_RX1_TRQ_SUB (0)
+
+#define CAN1_SCE_IRQ_PREEMPT (0xF)
+#define CAN1_SCE_IRQ_SUB (0)
+
+#define TIM5_IRQ_PREEMPT (2)
+#define TIM5_IRQ_SUB (0)
+
+#define TIM2_IRQ_PREEMPT (0)
+#define TIM2_IRQ_SUB (0)
+
+
+#define SDRAM_DMA_IRQ_PREEMPT (5)
+#define SDRAM_DMA_IRQ_SUB (0)
+
+#define TIM8_BRK_TIM12_IRQ_PREEMPT (0)
+#define TIM8_BRK_TIM12_IRQ_SUB (0)
+
+#define USART1_IRQ_PREEMPT (0xF)
+#define USART1_TRQ_SUB (0)
+
+#define USART3_IRQ_PREEMPT (0xF)
+#define USART3_TRQ_SUB (0)
+
+#define DMA1STREAM1_IRQ_PREEMPT (0xF)
+#define DMA1STREAM1_IRQ_SUB (0)
+
+
+#define LTDC_IRQ_PREEMPT (0xF)
+#define LTDC_IRQ_SUB (0)
+
+#define SDMMC1_IRQ_PREEMPT (0xF)
+#define SDMMC1_IRQ_SUB (0)
+
+#define SD_DMAX_RX_IRQ_PREEMPT (0xF)
+#define SD_DMAX_RX_IRQ_SUB (0)
+
+#define SD_DMAX_TX_IRQ_PREEMPT (0xF)
+#define SD_DMAX_TX_IRQ_SUB (0)
+
+#define ETH_IRQ_PREEMPT (0xF)
+#define ETH_IRQ_SUB (0)
+#endif

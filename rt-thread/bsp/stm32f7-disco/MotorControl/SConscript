@@ -1,0 +1,17 @@
+import rtconfig
+Import('RTT_ROOT')
+from building import *
+
+# get current directory
+cwd = GetCurrentDir()
+
+# The set of source files associated with this SConscript file.
+
+src = Glob('src/*.c')
+
+path = [cwd + '/inc']
+
+CPPDEFINES = ['']
+group = DefineGroup('MOTORCONTROL', src, depend = ['USER_USING_MOTORCONTROL'], CPPPATH = path, CPPDEFINES = CPPDEFINES)
+
+Return('group')
